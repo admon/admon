@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Trading Fees - Admon</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/django.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-313483426"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-313483426');
+        </script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Admon</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Crypto Exchanges <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Trading Fees</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../about/" class="nav-link">About</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" class="nav-link disabled">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../../about/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="2"><a href="#types-of-crypto-exchange-fees" class="nav-link">Types of crypto exchange fees</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#fees-by-cryptocurrency-exchange" class="nav-link">Fees by Cryptocurrency Exchange</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p>In the fast-moving world of cryptocurrency, it can be tough to keep up. One area of particular complexity is <strong>exchange fees</strong>. Crypto traders have an array of options to choose from when trading, but many exchanges hide fee structures in the fine print and confuse users with overlapping fee structures and discounts. The good news is we built this site to make it easy for you to track your fees across multiple exchanges.</p>
+<h2 id="types-of-crypto-exchange-fees">Types of crypto exchange fees<a class="headerlink" href="#types-of-crypto-exchange-fees" title="Permanent link"></a></h2>
+<p>Cryptocurrency exchanges charge fees on different types of user behavior:</p>
+<ul>
+<li><strong>Trading Fees</strong> — the primary source of revenue for exchanges. They are typically charged on both fiat-crypto trades as well as crypto-crypto trades.</li>
+<li><strong>Deposit/Withdrawal Fees </strong>—some exchanges charge fees for deposits and/or withdrawals. Deposit fees vary based on the type of deposit but are less common than withdrawal fees since exchanges want to incentivize users to fund their account. For cryptocurrency withdrawals, many exchanges limit fees to any blockchain transaction costs (usually a flat fee regardless of the amount withdrawn), but some will take an additional fee based on your country or the type of withdrawal (crypto vs fiat)</li>
+<li><strong>Interest/Borrowing/Liquidation Fees </strong>—some exchanges like Bybit, Kraken, Poloniex, and MEXC offer crypto margin trading: the ability to borrow or synthetically borrow additional funds to increase your position and create <a href="https://www.investopedia.com/terms/l/leverage.asp">leverage</a>. These exchanges typically charge additional fees based on the amount borrowed on margin and an interest rate determined by the supply of funds available. Additionally, if your trade goes upside down and the position is <a href="https://www.investopedia.com/terms/l/liquidation-margin.asp">liquidated</a> you may be charged an additional fee.</li>
+</ul>
+<h3 id="discounts"><strong>Discounts</strong><a class="headerlink" href="#discounts" title="Permanent link"></a></h3>
+<ul>
+<li>
+<p><strong>Market Makers &amp; Volume Discounts</strong> — many exchanges offer lower trading fees to “market makers”, traders placing <a href="https://www.investopedia.com/ask/answers/100314/whats-difference-between-market-order-and-limit-order.asp">limit orders instead of market orders</a>, and high volume traders to incentivize exchange liquidity</p>
+</li>
+<li>
+<p><strong>Exchange Token Discounts </strong>— an increasingly popular approach is to discount exchange fees for users who purchase an exchange’s own cryptocurrency token. Several non-US exchanges such as Binance, Huobi, and Bibox have adopted this system to help incentivize investment into their tokens. These exchanges have elected to decrease the amount of the discount each year until phasing it out entirely in after four to five years</p>
+</li>
+</ul>
+<p>Let’s take a closer look at fees across some of the top crypto exchanges.</p>
+<h2 id="fees-by-cryptocurrency-exchange">Fees by Cryptocurrency Exchange<a class="headerlink" href="#fees-by-cryptocurrency-exchange" title="Permanent link"></a></h2>
+<p><em>(assuming no discounts as of January 1, 2022)</em></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Exchange</td>
+<td>Trading Fees</td>
+<td></td>
+<td></td>
+<td>Funding Fees</td>
+<td></td>
+<td>Discounts</td>
+<td></td>
+</tr>
+<tr>
+<td>Maker</td>
+<td>Taker</td>
+<td>Spread</td>
+<td>Deposits</td>
+<td>Withdrawals</td>
+<td>Exchange Token Discount</td>
+<td>Volume Discount</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://bibox.zendesk.com/hc/en-us/articles/360002336133-New-Fee-Structure-on-Bibox">Bibox</a></td>
+<td>0.075%</td>
+<td>0.15%</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td><a href="https://www.binance.us/en/fee/schedule">Binance.us</a></td>
+<td>0.1%</td>
+<td>0.1%</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td><a href="https://support.binance.us/hc/en-us/articles/360046786894-Using-BNB-to-Pay-for-Fees">Yes</a> - 25%</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><a href="https://www.binance.com/en/fee/schedule">Binance.com</a></td>
+<td>0.1%</td>
+<td>0.1%</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+<td><a href="https://www.binance.com/en/fee/schedule">Yes</a> - 25%</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><a href="https://www.bitfinex.com/fees">Bitfinex</a></td>
+<td>0.1%</td>
+<td>0.2%</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><a href="https://www.bitstamp.net/fee_schedule/">Bitstamp</a></td>
+<td>0.5%</td>
+<td></td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><a href="https://bittrex.zendesk.com/hc/en-us/articles/115000199651-What-fees-does-Bittrex-charge-">Bittrex</a></td>
+<td>0.35%</td>
+<td>0.35%</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><a href="https://www.bitmex.com/app/fees">Bitmex</a></td>
+<td>0.025%</td>
+<td>0.075%</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><a href="https://www.bitpanda.com/en/pro/fees">Bitpanda pro</a></td>
+<td>0.1%</td>
+<td>0.15%</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><a href="https://blockfi.com/rates">BlockFi</a></td>
+<td>No trading fees</td>
+<td></td>
+<td></td>
+<td>No</td>
+<td>Yes</td>
+<td>No</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td><a href="https://exchange-support.blockchain.com/hc/en-us/articles/360031142571-Trading-Fees">Blockchain.com</a></td>
+<td>0.2%</td>
+<td>0.4%</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><a href="https://www.btcmarkets.net/fees">BTC Markets</a></td>
+<td>0.05%</td>
+<td>0.2%</td>
+<td>No</td>
+<td>No</td>
+<td>Yes (AUD Free)</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><a href="https://blog.bybitglobal.com/learn/bybit-101/how-much-trading-fees-do-i-pay/">Bybit.com</a></td>
+<td>-0.025% (Rebate)</td>
+<td>0.075%</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td><a href="https://cash.app/help/us/en-us/3103-bitcoin-fees">Cash App</a></td>
+<td>Service fee + additional fee (Exact fees are not disclosed on the website)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://cex.io/fee-schedule">CEX.IO</a></td>
+<td>0.16%</td>
+<td>0.25%</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><a href="https://support.coinbase.com/customer/en/portal/articles/2109597-coinbase-pricing-fees-disclosures">Coinbase</a></td>
+<td>N/A</td>
+<td>The greater of flat fee ($1.49, $1.99 &amp; $2.99) or 1.49%</td>
+<td>~0.50% fiat  <br>1.00% crypto</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><a href="https://pro.coinbase.com/fees">Coinbase Pro</a></td>
+<td>0.5%</td>
+<td>0.5%</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><a href="https://support.coinmama.com/hc/en-us/articles/360012659019-Fees-Charges">Coinmama</a></td>
+<td>Buy: <a href="https://tradeblock.com/markets/index">XBX Index</a> average +  2% (standard deviation)<br><br>Sell: <a href="https://tradeblock.com/markets/index">XBX Index</a> average +  2% (standard deviation) + 0.1% - 0.9% sell fee</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td><a href="https://www.coinspot.com.au/fees">Coinspot</a></td>
+<td>0.1%</td>
+<td>0.1%</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes (AUD Free)</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td><a href="https://crypto.com/exchange/document/fees-limits">crypto.com</a></td>
+<td>0.1%</td>
+<td>0.16%</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><a href="https://help.dydx.exchange/en/articles/3784235-trade-fees-on-dydx">dYdX</a></td>
+<td>0%</td>
+<td>HIgher of 0.3% or Gas cost</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td><a href="https://www.etoro.com/en-us/trading/fees/">eToro</a></td>
+<td>No trading fees</td>
+<td></td>
+<td>Yes - 0.75%</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td><a href="https://help.ftx.com/hc/en-us/articles/360024479432-Fees">FTX</a></td>
+<td>0.02%</td>
+<td>0.07%</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><a href="https://www.gate.io/fee">Gate.io</a></td>
+<td>0.2%</td>
+<td>0.2%</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><a href="https://www.gemini.com/fees/web-fee-schedule">Gemini</a></td>
+<td>The greater of flat fee ($0.99, $1.49, $1.99 &amp; $2.99) or 1.49%</td>
+<td></td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><a href="https://hitbtc.com/fee-tier">HitBTC</a></td>
+<td>0.1%</td>
+<td>0.25%</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><a href="https://www.huobi.com/en-us/fee/">Huboi</a></td>
+<td>0.2%</td>
+<td>0.2%</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><a href="https://exchange.idex.io/trading/QNT-ETH">IDEX</a></td>
+<td>0.1%</td>
+<td>0.2%</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td><a href="https://www.independentreserve.com/help/fees">Independent Reserve</a></td>
+<td>Trade commission - 0.5%</td>
+<td></td>
+<td></td>
+<td>Yes</td>
+<td>Yes (AUD Free)</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><a href="https://support.kraken.com/hc/en-us/articles/360000526126">Kraken</a></td>
+<td>0.16%</td>
+<td>0.26%</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><a href="https://www.kucoin.com/vip/level">Kucoin</a></td>
+<td>0.1%</td>
+<td>0.1%</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><a href="https://www.liquid.com/fees/">Liquid</a></td>
+<td>0.29%</td>
+<td>0.29%</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><a href="https://www.luno.com/en/countries/AU">Luno</a></td>
+<td>0%</td>
+<td>0.1%</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><a href="https://www.okex.com/fees.html">OKEx</a></td>
+<td>0.1%</td>
+<td>0.15%</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><a href="https://www.paypal.com/en/webapps/mpp/paypal-fees">PayPal</a></td>
+<td>0.50 Fixed fee or variable rate of 2.3%</td>
+<td></td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><a href="https://support.poloniex.com/hc/en-us/articles/360039490434-Fee-Structure">Poloniex</a></td>
+<td>0.125%</td>
+<td>0.125%</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><a href="https://river.com/support/knowledge-base/articles/fee-schedule">River</a></td>
+<td>Buy &amp; Sell: Fixed fee ($0.99 - $2.99) or (1.5% - 1.3%)</td>
+<td></td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><a href="https://robinhood.com/us/en/support/articles/trading-fees-on-robinhood/">Robinhood</a></td>
+<td>No trading fees</td>
+<td></td>
+<td></td>
+<td>No</td>
+<td>N/A</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td><a href="https://shakepay.co/fees">Shakepay</a></td>
+<td><a href="https://help.shakepay.com/en/articles/3171250-how-does-shakepay-make-money">No trading fees</a></td>
+<td></td>
+<td></td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td><a href="https://swyftx.com.au/fees/">swyftx</a></td>
+<td>0.6% + spread</td>
+<td></td>
+<td>Yes - 0.41%</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><a href="https://uniswap.org/docs/v2/advanced-topics/fees/">Uniswap</a></td>
+<td>0.3% for swaps</td>
+<td></td>
+<td></td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td><a href="https://uphold.com/en/pricing">Uphold</a></td>
+<td>N/A</td>
+<td>N/A</td>
+<td>Yes <br><br>(0.8% - 1.2% for BTC, ETH &amp; XRP)<br><br>  <br><br>0.2% for EUR, USD and GBP.</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<h4 id="crypto-exchange-fee-summary"><strong>Crypto exchange fee summary</strong><a class="headerlink" href="#crypto-exchange-fee-summary" title="Permanent link"></a></h4>
+<ul>
+<li>Trading fees vary by more than an order of magnitude, from 0.1% to more than 1% on Coinbase and Gemini</li>
+<li>Bibox, Binance, Coinspot, HitBTC, and Kucoin offered the lowest taker fee of the surveyed exchanges at 0.1%. Binance and Bibox offer even lower rates when paying with their exchange tokens</li>
+<li>Most exchanges do not charge fees on deposits made via Bank ACH or direct cryptocurrency deposits, but may typically charge additional fees for purchases/deposits made via wire transfer or credit cards</li>
+<li>Cryptocurrency withdrawal fees are typically limited to blockchain transaction costs, but these can vary considerably depending on the cryptocurrency</li>
+</ul>
+<p>In sum, always make sure to review the fee schedule at your preferred exchange and consider any applicable discounts for volume or usage in your calculation. </p>
+<p>If you have any questions or comments about crypto taxes let us know on Twitter <a href="https://twitter.com/infrash">@infrash</a>.</p>
+<hr />
+<p><em>Disclaimer: This post is informational only and is not intended as tax advice. For tax advice, please consult a tax professional.</em>
+<em>Last Updated: June 05, 2022</em></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2022 <a href="https://twitter.com/infrash">Admon</a>.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
